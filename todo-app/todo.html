@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO - APP</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+    <div class="post">
+        <h2 id="state">Enter a text</h2>
+        <div id="line"></div>
+    </div>
+    <div id="root">
+        <h1 class="header">Todo-List App</h1>
+        <div class="field">
+            <input type="text" name="todo" id="todo" placeholder="">
+            <button id="btn" onclick="add()" class="btn">Add Item</button>
+        </div>
+        <div id="render">
+             <div id="renderTodos">
+
+             </div>
+        </div>
+        <span class="delBtn" onclick="clearAll()">Clear All items</span>
+    </div>
+</body>
+<script src="./index.js"></script>
+</html>
